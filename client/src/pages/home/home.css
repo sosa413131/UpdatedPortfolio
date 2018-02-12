@@ -1,0 +1,9 @@
+body{
+    background-image: url('/background1.jpg')
+
+}
+
+.welcomeSmall{
+    text-align: center;
+    font-weight: 4000
+}
