@@ -7,7 +7,8 @@ const Container = () => {
 
         <div className='container'>
             <Col md={4} sm={12}>
-                Integer accumsan magna at metus convallis, ac posuere lacus vulputate. Phasellus volutpat lacus id risus finibus ornare non eu nisl. Curabitur ultricies odio a orci rhoncus efficitur. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc rhoncus dictum ipsum et ultricies. Phasellus varius est pulvinar enim mollis, vitae congue justo aliquet. Etiam arcu dui, viverra sit amet dapibus nec, lobortis a quam. Donec sollicitudin justo ligula, ac cursus sem aliquam sit amet. Fusce consectetur felis et enim blandit, sed elementum ex accumsan. Ut in rutrum velit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In nibh elit, bibendum in sagittis rhoncus, viverra ut urna. In ex tortor, vehicula et felis eu, iaculis varius erat.
+            I graduated from Union College in Schenectady, NY with a degree in Managerial Economics and for the last 4 years I have been working at JP Morgan. More recently I have been enrolled in a certificate program for Full-Stack Web Development at Rutgers University. I enjoy solving complex problems and using big data to provide insight into consumer behavior.
+
             </Col>
             <br/>
 

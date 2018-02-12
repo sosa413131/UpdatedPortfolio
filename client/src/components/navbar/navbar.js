@@ -15,13 +15,13 @@ class navbar extends Component {
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <NavItem eventKey={1} href="">
+                        <NavItem eventKey={1} href="/home">
                             About
     </NavItem>
-                        <NavItem eventKey={2} href="#">
+                        <NavItem eventKey={2} href="/portfolio">
                             Portfolio
     </NavItem>
-                        <NavItem eventKey={3} href="#">
+                        <NavItem eventKey={3} href="/contact">
                             Contact
 
     </NavItem>

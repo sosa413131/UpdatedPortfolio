@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Navbar from './components/navbar';
 import Home from './pages/home'
 import Wrapper from './components/wrapper'
+import Footer from "./components/footer";
 // import Contact from './pages/contact'
 // import About from './pages/about'
 
@@ -11,6 +13,7 @@ class App extends React.Component{
 return(
       <Router>
         <div>
+          <Navbar/>
         <Wrapper>
         <Switch>
           <Route exact path="/" component={Home} />
@@ -20,6 +23,7 @@ return(
             <Route component={NoMatch}/> */}
         </Switch>
         </Wrapper>
+        <Footer/>
         </div>
       </Router>
 )
