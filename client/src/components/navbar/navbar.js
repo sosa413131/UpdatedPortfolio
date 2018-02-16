@@ -15,7 +15,12 @@ class navbar extends Component {
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <NavItem eventKey={1} href="/home">
+                        <NavItem eventKey={1} href="/home"  className={
+            window.location.pathname === "/" ||
+              window.location.pathname === "/about"
+              ? "active"
+              : ""
+          }>
                             About
     </NavItem>
                         <NavItem eventKey={2} href="/portfolio">
