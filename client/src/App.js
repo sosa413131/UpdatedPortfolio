@@ -5,8 +5,9 @@ import Navbar from './components/navbar';
 import About from './pages/about'
 import Wrapper from './components/wrapper'
 import Footer from "./components/footer";
+import Portfolio from './pages/portfolio';
 // import Contact from './pages/contact'
-// import About from './pages/about'
+
 
 class App extends React.Component{
   render() {
@@ -18,9 +19,9 @@ return(
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/about" component={About} />
-          {/* <Route path="/about" component={About} />
-          <Route path="/portfolio" component={Portfolio} /> 
-            <Route component={NoMatch}/> */}
+          <Route path="/portfolio" component={Portfolio}/>
+          {/* <Route path="/contact" component={Contact} /> 
+            <Route component={NoMatch}/> */} 
         </Switch>
         </Wrapper>
         <Footer/>

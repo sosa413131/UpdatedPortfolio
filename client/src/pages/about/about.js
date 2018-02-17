@@ -6,7 +6,7 @@ import FaBomb from  "react-icons/lib/fa/bomb";
 import { Row, Col } from 'react-bootstrap';
 import Container from '../../components/container';
 
-class Home extends React.Component {
+class About extends React.Component {
     render() {
         return (
             <div>
@@ -22,4 +22,4 @@ class Home extends React.Component {
 }
 
 
-export default Home;
+export default About;
