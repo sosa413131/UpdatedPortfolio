@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/navbar';
-import Home from './pages/home'
+import About from './pages/about'
 import Wrapper from './components/wrapper'
 import Footer from "./components/footer";
 // import Contact from './pages/contact'
@@ -16,8 +16,8 @@ return(
           <Navbar/>
         <Wrapper>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/home" component={Home} />
+          <Route exact path="/" component={About} />
+          <Route exact path="/about" component={About} />
           {/* <Route path="/about" component={About} />
           <Route path="/portfolio" component={Portfolio} /> 
             <Route component={NoMatch}/> */}

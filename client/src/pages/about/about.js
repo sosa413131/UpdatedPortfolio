@@ -1,4 +1,4 @@
-import "./home.css";
+import "./about.css";
 import React, { Component } from 'react';
 import Hero from '../../components/hero';
 import FaDollar from "react-icons/lib/fa/dollar";

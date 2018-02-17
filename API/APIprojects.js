@@ -1,5 +1,4 @@
-module.exports = function () {
-    return ({
+module.exports = {
         "projects": {
             "project1": {
                 "name": "Election RPG",
@@ -64,7 +63,13 @@ module.exports = function () {
                 "deployedsite": "https://sosa413131.github.io/NoTreble/"
 
             },
+            "project10": {
+                "name": "Gif Generator",
+                "description": "A website to help scour the internet for .gif files.",
+                "githubRepoLink": "https://github.com/sosa413131/giphy-web-app",
+                "deployedsite": "https://sosa413131.github.io/giphy-web-app/"
+
+            },
 
         }
-    });
-};
+    };

@@ -9,24 +9,19 @@ class navbar extends Component {
             <Navbar inverse collapseOnSelect>
                 <Navbar.Header>
                     <Navbar.Brand>
-                        <a href="/">David W Sosa</a>
+                        <a href="/about">David W Sosa</a>
                     </Navbar.Brand>
                     <Navbar.Toggle />
                 </Navbar.Header>
                 <Navbar.Collapse>
                     <Nav>
-                        <NavItem eventKey={1} href="/home"  className={
-            window.location.pathname === "/" ||
-              window.location.pathname === "/about"
-              ? "active"
-              : ""
-          }>
+                        <NavItem eventKey={1} href="/about"  className={window.location.pathname === "/" || window.location.pathname === "/about" ? "active" : ""}>
                             About
     </NavItem>
-                        <NavItem eventKey={2} href="/portfolio">
+                        <NavItem eventKey={2} href="/portfolio" className={window.location.pathname === "/portfolio" ? "active" : ""}>
                             Portfolio
     </NavItem>
-                        <NavItem eventKey={3} href="/contact">
+                        <NavItem eventKey={3} href="/contact" className={window.location.pathname === "/contact" ? "active" : ""}>
                             Contact
 
     </NavItem>
