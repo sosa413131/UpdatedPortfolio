@@ -1,5 +1,5 @@
 import "./portfolio.css";
-import Projects from "../../components/projects";
+import Cards from "../../components/cards";
 import React, { Component } from 'react';
 
 
@@ -9,7 +9,7 @@ class About extends React.Component {
             <div>
 
                 <h2> Projects</h2>
-                <Projects/>
+                <Cards/>
             </div>
 
         )

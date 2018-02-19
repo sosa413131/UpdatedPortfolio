@@ -1,10 +1,51 @@
-import React from 'react';
+import React, { Component } from 'react';
 import "./cards.css";
+import API from "../../utils/utility";
+import Project from "../project"
 
 
-const cards = (props) => (
-<div>CARDS HERE</div>
-)
+class Cards extends Component {
+    state = {
+        data: []
+    }
 
 
-export default cards;
+    componentDidMount() {
+        API.getProjects()
+
+
+            .then(res => {
+                if (res.data.status === "error") {
+                    throw new Error("API erreor");
+                };
+
+                console.log(`res: ${JSON.stringify(res)}`);
+
+                this.setState = { data: JSON.stringify(res) }
+
+
+
+            })
+            .catch(err => console.log(err));
+
+    }
+    render() {
+        return (
+
+            <div className='row'>
+                {this.state.data.map(project => (
+                    <div>
+                        {project.name}
+                        {project.description}
+                        {project.githubRepoLink}
+                    </div>
+
+                ))}
+
+            </div>
+        );
+    };
+}
+
+
+export default Cards;
