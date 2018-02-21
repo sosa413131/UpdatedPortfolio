@@ -54,7 +54,8 @@ class Cards extends Component {
                        
                         <img src={item.image} height="300" width="300" className='card' href={item.deployedsite}/>
                         <div className='cardTitle'> {item.name}</div>
-                        <Button bsStyle='primary' className='appButton' href={item.deployedsite}> View App</Button> <Button  bsStyle='warning' className='codeButton' href={item.githubRepoLink}> View Code</Button>
+                       
+                         {(item.works) ? <Button bsStyle='primary' className='appButton' href={item.deployedsite}> View App</Button> :<Button bsStyle='danger' className='appButton' href={'/construction'}> TBD </Button> } <Button  bsStyle='warning' className='codeButton' href={item.githubRepoLink}> View Code</Button>
 
                     </div>
 
