@@ -1,0 +1,55 @@
+.displayCards{
+    margin-right:80px;
+    margin-left:80px;
+    align-content: center;
+}
+
+.cardTitle{
+    font-weight:300;
+    align-content: center;
+    line-height:60px;
+    background-color: purple;
+    color:white;
+    padding-left:20px;
+    padding-right:20px;
+    width:300px;
+    margin-bottom:20px;
+    position:relative;
+    bottom:150px;
+    text-align: center;
+}
+
+.card{
+    transition: all .2s ease-in-out;
+    border: 5px solid whitesmoke;
+}
+
+.cardDiv{
+margin-right:20px;
+}
+
+/* .cardTitle:hover{
+        transition: all .2s ease-in-out;
+}
+
+.cardTitle:hover{
+    transform: scale(1.1); 
+
+    
+} */
+
+.appButton, .codeButton{
+    position: relative;
+    bottom: 125px
+
+}
+
+/* .appButton{
+
+
+
+}
+.codeButton{
+
+
+} */

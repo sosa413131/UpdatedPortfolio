@@ -2,45 +2,63 @@ import React, { Component } from 'react';
 import "./cards.css";
 import API from "../../utils/utility";
 import Project from "../project"
+import workingAPI from '../../API/APIprojects' 
+import { Button } from 'react-bootstrap';
 
 
 class Cards extends Component {
-    state = {
-        data: []
-    }
+    // state = {
+    //     data: []
+    // }
 
+    // componentWillMount() {
+    //     API.getProjects()
+    //         .then(res => {
+    //             if (res.data.status === "error") {
+    //                 throw new Error("API erreor");
+    //             };
 
-    componentDidMount() {
-        API.getProjects()
+    //             console.log(`res: ${JSON.stringify(res.data)}`);
 
+    //             this.setState = { data: JSON.stringify(res.data), error: "" }
 
-            .then(res => {
-                if (res.data.status === "error") {
-                    throw new Error("API erreor");
-                };
+    //         })
+    //         .catch(err => {
+    //             console.log(err)
+    //             // this.setState({ error: err.message });
 
-                console.log(`res: ${JSON.stringify(res)}`);
-
-                this.setState = { data: JSON.stringify(res) }
-
-
-
-            })
-            .catch(err => console.log(err));
-
-    }
+    //         })
+    // }
     render() {
         return (
 
-            <div className='row'>
-                {this.state.data.map(project => (
-                    <div>
-                        {project.name}
-                        {project.description}
-                        {project.githubRepoLink}
+
+            //     <ClickItem
+            //       key={item.id}
+            //       id={item.id}
+            //       shake={!this.state.score && this.state.topScore}
+            //       handleClick={this.handleItemClick}
+            //       image={item.image}
+            //     />
+            //   ))}
+
+            // {item.description}
+            // {item.githubRepoLink}
+            // {item.deployedsite}
+            // alt={item.alt}
+
+
+            <div className='row displayCards'>
+                {workingAPI.map(item =>
+                    <div className='col-md-4 col-sm-6 cardDiv'>
+                       
+                        <img src={item.image} height="300" width="300" className='card' href={item.deployedsite}/>
+                        <div className='cardTitle'> {item.name}</div>
+                        <Button bsStyle='primary' className='appButton' href={item.deployedsite}> View App</Button> <Button  bsStyle='warning' className='codeButton' href={item.githubRepoLink}> View Code</Button>
+
                     </div>
 
-                ))}
+                )}
 
             </div>
         );
