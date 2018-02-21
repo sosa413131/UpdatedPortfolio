@@ -23,7 +23,7 @@
     "name": "Burger Tracker",
     "description": "Burgers are delicious! Enough said.",
     "githubRepoLink": "https://github.com/sosa413131/SequelizedBurger",
-    "deployedsite": "https://git.heroku.com/burger-sql-sosa.git",
+    "deployedsite": "https://burger-sql-sosa.herokuapp.com/",
     "image": "/portfolioPics/burger.jpg"
 
 }, {
