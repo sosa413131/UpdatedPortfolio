@@ -6,6 +6,7 @@ import About from './pages/about'
 import Wrapper from './components/wrapper'
 import Footer from "./components/footer";
 import Portfolio from './pages/portfolio';
+import Construction from './pages/construction';
 // import Contact from './pages/contact'
 
 
@@ -20,8 +21,9 @@ return(
           <Route exact path="/" component={About} />
           <Route exact path="/about" component={About} />
           <Route path="/portfolio" component={Portfolio}/>
-          {/* <Route path="/contact" component={Contact} /> 
-            <Route component={NoMatch}/> */} 
+            <Route path="/construction" component={Construction} /> 
+          <Route path="/contact" component={Construction} /> 
+            {/*<Route component={NoMatch}/> */} 
         </Switch>
         </Wrapper>
         <Footer/>
