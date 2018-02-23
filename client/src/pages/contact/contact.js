@@ -4,34 +4,46 @@ import React, { Component, FormGroup, ControlLabel, FormControl, HelpBlock } fro
 class FormA extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {value: ''};
-        this.handleChange = this.handleChange.bind(this);
+        this.state = {
+            name: '',
+            email: '',
+            message: ''
+        };
+        this.handleNameChange = this.handleNameChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-      }
-      handleChange(event) {
-        this.setState({value: event.target.value});
-      }
-    
-      handleSubmit(event) {
-        console.log(`A contact request was submitted: ${ this.state.value}`);
+        this.handleEmailChange = this.handleEmailChange.bind(this);
+        this.handleMessageChange=this.handleMessageChange.bind(this);
+    }
+    handleNameChange(event) {
+        this.setState({ name: event.target.value });
+    }
+    handleEmailChange(event) {
+        this.setState({ email: event.target.value });
+    }
+    handleMessageChange(event) {
+        this.setState({ message: event.target.value });
+    }
+
+    handleSubmit(event) {
+        console.log(`A contact request was submitted\n Name:${this.state.name} \n email: ${ this.state.email} \n message: ${this.state.message}`);
         event.preventDefault();
-      }
+    }
     render() {
         return (
 
             <form onSubmit={this.handleSubmit}>
                 <label>
                     Name:
-      <input type="text" placeholder="Hi, My name is..."  value={this.state.value} onChange={this.handleChange}  />
+      <input type="text" placeholder="Hi, My name is..." name={this.state.value} onChange={this.handleNameChange} />
                 </label>
-                {/* <label>
+<label>
                     email:
-      <input type="text" name="email" placeholder="blackpanther@wakanda.com" />
+      <input type="email" placeholder="blackpanther@wakanda.com" email={this.state.value} onChange={this.handleEmailChange} />
                 </label>
                 <label>
                     message:
-      <input type="text" name="name" placeholder="Hi, My name is..." />
-                </label> */}
+      <input type="text" name="name" placeholder="I love your lyrics App!" message={this.state.value} onChange={this.handleMessageChange} />
+                </label> 
                 <input type="submit" value="Submit" />
             </form>
         )
