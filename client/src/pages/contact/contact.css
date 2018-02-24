@@ -1,0 +1,50 @@
+.nameField, .emailField ,.messageField{
+    color:black;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px
+}
+
+ .nameField{
+     width: 400px;
+    height: 40px;
+
+
+}
+
+.emailField{
+    width: 400px;
+    height: 40px;
+
+} 
+
+.messageField{
+    width: 400px;
+    height: 400px;
+    line-height: 20px;
+    text-align: left;
+
+}
+
+label{
+    color:aliceblue;
+}
+
+.submit{
+    display: inline-block;
+}
+
+.formRow{
+    /* position: unset; */
+   text-align: center;
+}
+
+.formText{
+    float: left;
+    margin-bottom: 2px;
+    box-sizing: border-box;
+}
+
+input[type=text]:focus {
+    border: 3px solid purple;
+}
