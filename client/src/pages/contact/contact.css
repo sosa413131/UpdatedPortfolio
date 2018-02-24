@@ -2,20 +2,19 @@
     color:black;
     border-radius: 5px;
     display: inline-block;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    resize: none;
+    padding: 12px;
 }
 
  .nameField{
      width: 400px;
     height: 40px;
-
-
 }
 
 .emailField{
     width: 400px;
     height: 40px;
-
 } 
 
 .messageField{
@@ -23,7 +22,6 @@
     height: 400px;
     line-height: 20px;
     text-align: left;
-
 }
 
 label{
@@ -35,8 +33,15 @@ label{
 }
 
 .formRow{
-    /* position: unset; */
    text-align: center;
+
+}
+
+.formCol{
+    margin-right:140px;
+    margin-left:140px;
+
+
 }
 
 .formText{
