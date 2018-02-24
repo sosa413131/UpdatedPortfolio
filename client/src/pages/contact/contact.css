@@ -7,15 +7,11 @@
     padding: 12px;
 }
 
- .nameField{
+ .nameField, .emailField{
      width: 400px;
     height: 40px;
+    overflow: hidden;
 }
-
-.emailField{
-    width: 400px;
-    height: 40px;
-} 
 
 .messageField{
     width: 400px;
@@ -34,14 +30,6 @@ label{
 
 .formRow{
    text-align: center;
-
-}
-
-.formCol{
-    margin-right:140px;
-    margin-left:140px;
-
-
 }
 
 .formText{

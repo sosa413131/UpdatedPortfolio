@@ -64,7 +64,7 @@
     "works":false
 
 }, {
-    "name": "No Treble (Notepad for Lyricists)",
+    "name": "Notepad for Lyricists",
     "description": "A notepad-like web application that helps artists compare their original lyrics to those in popular songs. Also provides youtube content so you can listen to the songs.",
     "githubRepoLink": "https://github.com/sosa413131/NoTreble",
     "deployedsite": "https://sosa413131.github.io/NoTreble/",

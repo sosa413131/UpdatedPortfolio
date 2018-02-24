@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import "./cards.css";
-import API from "../../utils/utility";
+// import API from "../../utils/utility";
 import Project from "../project"
 import workingAPI from '../../API/APIprojects' 
 import { Button } from 'react-bootstrap';
 
 
-class Cards extends Component {
+class Cards extends React.Component {
     // state = {
     //     data: []
     // }
@@ -50,7 +50,7 @@ class Cards extends Component {
 
             <div className='row displayCards'>
                 {workingAPI.map(item =>
-                    <div className='col-md-4 col-sm-6 cardDiv'>
+                    <div className='col-md-4 col-sm-6 cardDiv' key={item.name}>
                        
                         <img src={item.image} height="300" width="300" className='card' href={item.deployedsite}/>
                         <div className='cardTitle'> {item.name}</div>
