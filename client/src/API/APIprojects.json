@@ -49,7 +49,7 @@
 }, {
     "name": "Tutor Scheduler",
     "description": "An application for families to schedule tutoring sessisons and for their tutors to provide feedack on tutoring sessions.",
-    "githubRepoLink": "https://github.com/sosa413131/bright-kids-portal-v2",
+    "githubRepoLink": "https://github.com/sosa413131/TutorScheduler",
     "deployedsite": "https://intense-thicket-85835.herokuapp.com/",
     "image": "/portfolioPics/tutor.jpg",
    "works":false

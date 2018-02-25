@@ -17,7 +17,7 @@
   }
   
   .hero * {
-    position: relative;
+    position: inherit;
     z-index: 2;
   }
   
