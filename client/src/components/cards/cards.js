@@ -1,62 +1,25 @@
 import React, { Component } from 'react';
 import "./cards.css";
-import API from "../../utils/utility";
-import Project from "../project"
+// import Project from "../project"
 import workingAPI from '../../API/APIprojects'
 import { Button } from 'react-bootstrap';
 
 
-class Cards extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            projects: [],
-        }
-    }
-    componentWillMount = () => {
-        API.getProjects()
-            .then(res => {
-                if (res.data.status === "error") {
-                    throw new Error("API error");
-                };
-
-                // console.log(`res: ${JSON.stringify(res.data)}`);
-                this.setState((prevState) =>{ 
-                    projects: 
-                   [...prevState.projects] = res.data })
-                console.log(this.state.projects)
-
-            })
-            .catch(err => {
-                console.log(err)
-            })
-    }
-
-    render() {
-
-        if (this.state.projects.length === 0) {
-            return false //returns false if projects have not yet mounted to avoid site crash
-        }
-
-        return (
-            <div className='row displayCards'>
-                {this.state.projects.map(item =>
-                    <div className='col-md-4 col-sm-6 cardDiv' key={item.name}>
-
-                        <img src={item.image} height="300" width="300" className='card' href={item.deployedsite} />
-                        <div className='cardTitle'> {item.name}</div>
-
-                        {(item.works) ? <div><Button bsStyle='primary' className='appButton' href={item.deployedsite}> View App</Button>  <Button bsStyle='success' className='codeButton' href={item.githubRepoLink}> View Code</Button></div> : <div><Button bsStyle='danger' className='appButton' href={'/construction'}> TBD </Button>  <Button bsStyle='warning' className='codeButton' href={item.githubRepoLink}> View Code</Button></div>}
-
-                    </div>
-
-                )}
-
+const Cards = props => 
+    <div className='row displayCards'>
+        {workingAPI.map(item =>
+            <div className='col-md-4 col-sm-6 cardDiv' key={item.name}>
+                <img src={item.image} height="300" width="300" className='card' href={item.deployedsite} />
+                <div className='cardTitle'> {item.name}</div>
+                {(item.works) ? <div><Button bsStyle='primary' className='appButton' href={item.deployedsite}> View App</Button>  <Button bsStyle='success' className='codeButton' href={item.githubRepoLink}> View Code</Button></div> : <div><Button bsStyle='danger' className='appButton' href={'/construction'}> TBD </Button>  <Button bsStyle='warning' className='codeButton' href={item.githubRepoLink}> View Code</Button></div>}
             </div>
-        );
-    };
 
-}
+        )}
+
+    </div>
+
+
+
 
 
 export default Cards;
