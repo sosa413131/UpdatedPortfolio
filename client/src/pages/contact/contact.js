@@ -1,6 +1,7 @@
-import './contact.css'
+import './contact.css';
 import React, { Component, FormGroup, ControlLabel, FormControl, HelpBlock } from 'react';
-import { Row, Col, Button } from 'react-bootstrap'
+import { Row, Col, Button } from 'react-bootstrap';
+import Modal from '../../components/modal';
 
 class FormA extends React.Component {
     constructor(props) {
@@ -10,6 +11,7 @@ class FormA extends React.Component {
             email: '',
             message: ''
         };
+
         this.handleNameChange = this.handleNameChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
         this.handleEmailChange = this.handleEmailChange.bind(this);
@@ -59,7 +61,10 @@ class FormA extends React.Component {
                         <Button bsStyle="success" bsSize="large" className="submitButton" type="submit">Submit</Button>
                     </Col>
                 </form>
+                <Modal show={false}/>
             </Row>
+
+
         )
     }
 }
