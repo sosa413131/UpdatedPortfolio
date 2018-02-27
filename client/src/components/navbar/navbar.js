@@ -34,7 +34,7 @@ class navbar extends Component {
                             <MenuItem eventKey={3.2} href="https://github.com/sosa413131">Github</MenuItem>
                             <MenuItem eventKey={3.3} href="https://stackoverflow.com/users/8422298/sosa413131">Stack Overflow</MenuItem>
                             <MenuItem divider />
-                            <MenuItem eventKey={3.3}>Email</MenuItem>
+                            <MenuItem  href="mailto:Sosa.David88@gmail.com" eventKey={3.3}>Email</MenuItem>
                         </NavDropdown>
                     </Nav>
                 </Navbar.Collapse>
