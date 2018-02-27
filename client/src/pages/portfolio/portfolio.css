@@ -1,8 +1,16 @@
-/* .fa-spinner{
-    font-size:100px;
+.fa-spinner{
+    animation: App-logo-spin infinite 1s linear;
+}
+
+.loadDiv{
+    font-size:80px;
     text-align: center;
-    display: inline-block;
-    margin: auto;
+    color: blueviolet;
+}
+
+.projectsHeader {
+    color: aliceblue;
+    font-size: 50px;
     position: relative;
     left: 20px;
-} */
+}
