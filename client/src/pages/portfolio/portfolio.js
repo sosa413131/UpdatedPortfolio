@@ -5,10 +5,13 @@ import Cards from "../../components/cards";
 // import Project from "../../components/project"
 
 class Portfolio extends React.Component {
-    state = {
-        projects: [],
+    constructor(props) {
+        super(props);
+        this.state = {
+            projects: [],
+        }
     }
-
+    // componentWillMount() is invoked just before mounting, i.e. d before render()
     componentDidMount = () => {
         this.loadProjects();
     }
@@ -20,10 +23,10 @@ class Portfolio extends React.Component {
                     throw new Error("API error");
                 };
 
-                this.setState((prevState) => {
-                    projects:
-                    [...prevState.projects] = res.data
-                })
+                this.setState(
+                    // API projects response assigned to state
+                    { projects: res.data }
+                )
                 console.log(this.state.projects)
 
             })
@@ -36,10 +39,14 @@ class Portfolio extends React.Component {
         return (
             <div>
                 <span className='projectsHeader'>Projects</span>
-                <Cards projects={this.state.projects}/>
+                {this.state.projects.length
+                ?<Cards projects={this.state.projects}/>
+                :<div className='loadDiv'> Loading... <i class="fa fa-spinner" aria-hidden="true"></i> </div>
+                }
             </div>
         )
     }
+
 }
 
 
