@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
 import "./cards.css";
-// import Project from "../project"
-import workingAPI from '../../API/APIprojects'
 import { Button } from 'react-bootstrap';
 
 
 const Cards = (props) => {
-    // console.log(`props: ${JSON.stringify(props)}`);
 
     return (
         <div className='row displayCards'>
