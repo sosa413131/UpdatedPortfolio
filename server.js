@@ -42,8 +42,17 @@ if (process.env.NODE_ENV === "development") {
   });
 }
 
-// Server to listen for requests
-app.listen(PORT, function () {
-  console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+// Sequelize ORM for communicating with database
+const sequelize = require("sequelize");
+
+// Requiring our models for syncing with database
+var db = require("./models");
+
+// Syncing sequelize model and then starting our Express app
+// =============================================================
+db.sequelize.sync({ force: false }).then(function() {
+  app.listen(PORT, function() {
+    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+  });
 });
 
