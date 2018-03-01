@@ -50,18 +50,18 @@
     "name": "Tutor Scheduler",
     "description": "An application for families to schedule tutoring sessisons and for their tutors to provide feedack on tutoring sessions.",
     "githubRepoLink": "https://github.com/sosa413131/bright-kids-portal-v2",
-    "deployedsite": "https://intense-thicket-85835.herokuapp.com/",
+    "deployedsite": "http://warm-wildwood-27556.herokuapp.com",
     "image": "/portfolioPics/tutor.jpg",
-   "works":false
+   "works":true
 
 
 }, {
     "name": "Barbershop Scheduler",
     "description": "A scheduling app for barbers and clients.",
     "githubRepoLink": "https://github.com/sosa413131/barber-shop-scheduler",
-    "deployedsite": "https://salty-springs-19580.herokuapp.com/",
+"deployedsite": "https://mighty-crag-92193.herokuapp.com/",
     "image": "/portfolioPics/barber.jpeg",
-    "works":false
+    "works": true
 
 }, {
     "name": "Notepad for Lyricists",
