@@ -20,6 +20,20 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
+// Requiring model for syncing with database
+var db = require("./models");
+
+// Sequelize ORM for communicating with database
+const sequelize = require("sequelize");
+
+// Syncing sequelize model and then starting Express app
+// =============================================================
+db.sequelize.sync({ force: false }).then(function() {
+  app.listen(PORT, function() {
+    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
+  });
+});
+
 // api rotes
 const api_routes = require("./routes/api-routes")(app);
 app.use("/api", api_routes);
@@ -42,17 +56,4 @@ if (process.env.NODE_ENV === "development") {
   });
 }
 
-// Sequelize ORM for communicating with database
-const sequelize = require("sequelize");
-
-// Requiring our models for syncing with database
-var db = require("./models");
-
-// Syncing sequelize model and then starting our Express app
-// =============================================================
-db.sequelize.sync({ force: false }).then(function() {
-  app.listen(PORT, function() {
-    console.log(`🌎  ==> API Server now listening on PORT ${PORT}!`);
-  });
-});
 

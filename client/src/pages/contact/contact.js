@@ -2,6 +2,7 @@ import './contact.css';
 import React, { Component, FormGroup, ControlLabel, FormControl, HelpBlock } from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import Modal from '../../components/modal';
+import API from "../../utils/utility";
 
 class FormA extends React.Component {
     constructor(props) {
@@ -28,9 +29,25 @@ class FormA extends React.Component {
     }
 
     handleSubmit(event) {
-        console.log(`A contact request was submitted\n Name:${this.state.name} \n email: ${this.state.email} \n message: ${this.state.message}`);
+        // console.log(`A contact request was submitted\n Name:${this.state.name} \n email: ${this.state.email} \n message: ${this.state.message}`);
         event.preventDefault();
+        let json = {
+            name:this.state.name,
+            email: this.state.email,
+            message: this.state.message
+        }
+
+        // api call with data from form
+        API.postContact(json)
+    
+            // clear form fields after api
+        // this.setState({
+        //     name: '',
+        //     email: '',
+        //     message:''
+        // })
     }
+    
     render() {
         return (
             <Row className='formRow'>

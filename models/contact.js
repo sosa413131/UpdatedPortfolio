@@ -1,17 +1,21 @@
-module.exports = function(sequelize, DataTypes) {
+module.exports = function (sequelize, DataTypes) {
 	var contact = sequelize.define("contact", {
-		name:{
+		// id: {
+		// 	autoincrement: true,
+		// 	primaryKey: true,
+		// 	type: DataTypes.INTEGER
+		// },
+		name: {
 			allowNull: false,
-			type: DataTypes. TEXT,
+			type: DataTypes.TEXT,
 		},
-        email:{
+		email: {
 			allowNull: false,
 			type: DataTypes.STRING,
-			primaryKey: true
 		},
-		message:{
+		message: {
 			allowNull: false,
-			type: DataTypes. TEXT,
+			type: DataTypes.TEXT,
 		}
 	});
 
