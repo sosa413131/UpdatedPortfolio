@@ -31,23 +31,53 @@ class FormA extends React.Component {
     handleSubmit(event) {
         // console.log(`A contact request was submitted\n Name:${this.state.name} \n email: ${this.state.email} \n message: ${this.state.message}`);
         event.preventDefault();
+
+        var fieldEmpty = false;
+
+        if (this.state.name ==""){
+            console.log("name field is empty");
+            var fieldEmpty = true;
+            
+        }
+        if (this.state.email==""){
+            console.log("email field is empty");
+            var fieldEmpty = true;
+        }
+        if (this.state.message==""){
+            console.log("message field is empty");
+            var fieldEmpty = true;
+        }
+        
+        if (fieldEmpty == true){
+            return
+        }
+        // switch(expression) {
+        //     case n:
+        //         // code block
+        //     case n:
+        //         // code block
+        //     case n:
+        //         // code block
+        //         break;
+
+        //     default:
+        //         // code block
+        // }
+
         let json = {
-            name:this.state.name,
+            name: this.state.name,
             email: this.state.email,
             message: this.state.message
         }
 
         // api call with data from form
-        API.postContact(json)
-    
-            // clear form fields after api
-        // this.setState({
-        //     name: '',
-        //     email: '',
-        //     message:''
-        // })
+        API.postContact(json);
+
+        // clears form after submitted
+        event.target.reset();
     }
-    
+
+
     render() {
         return (
             <Row className='formRow'>
@@ -78,7 +108,7 @@ class FormA extends React.Component {
                         <Button bsStyle="success" bsSize="large" className="submitButton" type="submit">Submit</Button>
                     </Col>
                 </form>
-                <Modal show={false}/>
+                <Modal />
             </Row>
 
 

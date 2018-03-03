@@ -1,11 +1,6 @@
 module.exports = function (sequelize, DataTypes) {
 	var contact = sequelize.define("contact", {
 		// columns
-		// id: {
-		// 	primaryKey: true,
-		// 	autoincrement: true,
-		// 	type: DataTypes.INTEGER
-		// },
 		name: {
 			allowNull: false,
 			type: DataTypes.TEXT,
@@ -18,11 +13,10 @@ module.exports = function (sequelize, DataTypes) {
 			allowNull: false,
 			type: DataTypes.TEXT,
 		},
-		messageID:{
+		messageID: {
 			type: DataTypes.STRING,
-			len: [7,10],
-			// primaryKey: true, 
-
+			len: [7, 10],
+			primaryKey: true,
 		}
 	}
 		,

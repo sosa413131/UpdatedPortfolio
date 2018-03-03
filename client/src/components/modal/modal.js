@@ -7,7 +7,7 @@ class ModalComponent extends React.Component {
         super(props, context);
 
         this.state = {
-            showModal: true
+            showModal: false
         };
 
         this.handleShow = this.handleShow.bind(this);
@@ -26,7 +26,7 @@ class ModalComponent extends React.Component {
         return (
 
             <div >
-                <Modal Modal  className="static-modal" show={this.state.showModal} onHide={this.handleClose}>
+                <Modal className="static-modal" show={this.state.showModal} onHide={this.handleClose}>
                     <Modal.Header>
                         <Modal.Title>Feedback Cannot Be Collected </Modal.Title>
                     </Modal.Header>
