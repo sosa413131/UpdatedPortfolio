@@ -2,9 +2,8 @@ import "./portfolio.css";
 import React, { Component } from 'react';
 import API from "../../utils/utility";
 import Cards from "../../components/cards";
-// import Project from "../../components/project"
 
-class Portfolio extends React.Component {
+class Portfolio extends Component {
     constructor(props) {
         super(props);
         this.state = {

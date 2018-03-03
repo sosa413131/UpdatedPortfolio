@@ -1,10 +1,10 @@
 import './contact.css';
-import React, { Component, FormGroup, ControlLabel, FormControl, HelpBlock } from 'react';
+import React, {Component} from 'react';
 import { Row, Col, Button } from 'react-bootstrap';
 import Modal from '../../components/modal';
 import API from "../../utils/utility";
 
-class FormA extends React.Component {
+class FormA extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -29,28 +29,29 @@ class FormA extends React.Component {
     }
 
     handleSubmit(event) {
-        // console.log(`A contact request was submitted\n Name:${this.state.name} \n email: ${this.state.email} \n message: ${this.state.message}`);
         event.preventDefault();
 
         var fieldEmpty = false;
 
-        if (this.state.name ==""){
+        if (this.state.name ===""){
             console.log("name field is empty");
-            var fieldEmpty = true;
-            
+            fieldEmpty = true;
         }
-        if (this.state.email==""){
+
+        if (this.state.email===""){
             console.log("email field is empty");
-            var fieldEmpty = true;
+            fieldEmpty = true;
         }
-        if (this.state.message==""){
+
+        if (this.state.message===""){
             console.log("message field is empty");
-            var fieldEmpty = true;
+            fieldEmpty = true;
         }
         
-        if (fieldEmpty == true){
+        if (fieldEmpty === true){
             return
         }
+
         // switch(expression) {
         //     case n:
         //         // code block

@@ -13,7 +13,7 @@ import NoMatch from './pages/notfound';
 // import Contact from './pages/contact'
 
 
-class App extends React.Component{
+class App extends Component{
   render() {
 return(
       <Router>

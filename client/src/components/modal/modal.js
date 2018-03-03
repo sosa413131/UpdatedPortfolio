@@ -2,7 +2,7 @@ import './modal.css';
 import React, { Component } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 
-class ModalComponent extends React.Component {
+class ModalComponent extends Component {
     constructor(props, context) {
         super(props, context);
 
@@ -26,7 +26,7 @@ class ModalComponent extends React.Component {
         return (
 
             <div >
-                <Modal className="static-modal" show={this.state.showModal} onHide={this.handleClose}>
+                <Modal className="static-modal" showModal={this.state.showModal} onHide={this.handleClose}>
                     <Modal.Header>
                         <Modal.Title>Feedback Cannot Be Collected </Modal.Title>
                     </Modal.Header>

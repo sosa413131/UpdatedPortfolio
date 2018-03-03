@@ -3,10 +3,10 @@ import React, { Component } from 'react';
 import Hero from '../../components/hero';
 import FaDollar from "react-icons/lib/fa/dollar";
 import FaBomb from  "react-icons/lib/fa/bomb";
-import { Row, Col } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
 import Container from '../../components/container';
 
-class About extends React.Component {
+class About extends Component {
     render() {
         return (
             <div>
