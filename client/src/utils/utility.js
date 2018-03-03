@@ -1,4 +1,5 @@
 import axios from "axios";
+var shortid = require('shortid');
 
 // Export an object containing methods we'll use for accessing the API
 
@@ -8,10 +9,11 @@ export default {
     },
     postContact: function (contact) {
         axios.post("/api/postcontact", {
-            // id: ,
             name: contact.name,
             email: contact.email,
-            message: contact.message
+            message: contact.message,
+            messageID: shortid.generate()
+
         })
             .then(function (response) {
                 console.log(response);
