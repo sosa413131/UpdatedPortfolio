@@ -10,16 +10,14 @@ import Footer from "./components/footer";
 import Construction from './pages/construction';
 import NoMatch from './pages/notfound';
 
-// import Contact from './pages/contact'
-
 
 class App extends Component{
   render() {
 return(
       <Router>
         <div>
-          <Navbar/>
         <Wrapper>
+        <Navbar/>
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/about" component={About} />
@@ -28,8 +26,8 @@ return(
             <Route path="/construction" component={Construction} /> 
             <Route  path="/*"component={NoMatch}/> 
         </Switch>
-        </Wrapper>
         <Footer/>
+        </Wrapper>
         </div>
       </Router>
 )

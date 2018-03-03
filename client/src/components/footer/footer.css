@@ -2,26 +2,32 @@
     width: 100%;
     margin-top: 20px;
     position:  relative;
-    bottom: -2px;
+    bottom: -5px;
     left: 0;
     right: 0;
     width: 100%;
-    line-height: 40px;
-    padding: 1rem;
+    padding-right: 10px;
+    padding-left: 10px; 
     display: inline-block;
     border-top: blue 2px solid;
     background: black;
     color: white;
+    
 }
 
 .davidPlug {
     text-align: right;
+    line-height: 60px;
 }
 
 .reactPlug {
     text-align: left;
+    line-height: 60px;
 }
 
+.footerRow{
+    vertical-align: middle;
+}
 
 /* ================Spinning Footer======================= */
 

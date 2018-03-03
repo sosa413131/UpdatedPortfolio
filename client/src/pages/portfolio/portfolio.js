@@ -26,7 +26,7 @@ class Portfolio extends Component {
                     // API projects response assigned to state
                     { projects: res.data }
                 )
-                console.log(this.state.projects)
+                // console.log(this.state.projects)
 
             })
             .catch(err => {
@@ -40,7 +40,7 @@ class Portfolio extends Component {
                 <span className='projectsHeader'>Projects</span>
                 {this.state.projects.length
                 ?<Cards projects={this.state.projects}/>
-                :<div className='loadDiv'> Loading... <i class="fa fa-spinner" aria-hidden="true"></i> </div>
+                :<div className='loadDiv'> Loading... <i className="fa fa-spinner" aria-hidden="true"></i> </div>
                 }
             </div>
         )

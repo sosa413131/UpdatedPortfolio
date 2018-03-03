@@ -12,7 +12,7 @@ class About extends Component {
             <div>
                 <Hero backgroundImage={'/skeletonanddavid.jpg'}>
                    <span className='.welcome'> <h1><Col md={2} xs={2}><FaBomb/></Col><Col md={8} xs={8}> Welcome to My Page</Col><Col md={2} xs={2}><FaDollar/></Col></h1></span>
-                   <span className ='.welcomeSmall'><h2>  <Col md={12} xs={12}> web developer, risk analyst and pop culture enthusiast</Col></h2></span>
+                   <h2>  <Col md={12} xs={12}> <span className='welcomeSmall'>web developer, risk analyst and pop culture enthusiast </span></Col></h2>
                 </Hero>
                 <Container/>
             </div>
