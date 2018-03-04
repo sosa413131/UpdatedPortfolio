@@ -59,7 +59,7 @@
     "name": "Barbershop Scheduler",
     "description": "A scheduling app for barbers and clients.",
     "githubRepoLink": "https://github.com/sosa413131/barber-shop-scheduler",
-"deployedsite": "https://mighty-crag-92193.herokuapp.com/",
+"deployedsite": "https://barbershops.herokuapp.com/",
     "image": "/portfolioPics/barber.jpeg",
     "works": true
 
