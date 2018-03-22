@@ -1,0 +1,15 @@
+{
+"name": "News Scraper",
+"description": "Web app that scrapes articles from NY Times (but is it fake news?)",
+"githubRepoLink": "https://github.com/sosa413131/MongoScraper",
+"deployedsite": "https://thawing-bayou-79587.herokuapp.com/home",
+"image": "",
+"works":
+}, {
+"name": "Hangman",
+"description": "Join Pat Sajak in trying to guess the word or phrase in this wheel-of-fortune-esque game of hangman",
+"githubRepoLink": "https://github.com/sosa413131/HangmanGame",
+ "deployedsite": "https://sosa413131.github.io/HangmanGame/,
+"image": "",
+"works":
+}
