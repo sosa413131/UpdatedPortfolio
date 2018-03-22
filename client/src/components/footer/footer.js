@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="footer">
             <Row className='footerRow'>
                 <Col md={6} xs={6} className='reactPlug'>
-                    <span > Proudly Created with React <img src={'/reactLogo.svg'} className="App-logo" alt="logo" /></span>
+                    <span > Proudly Created With React <img src={'/reactLogo.svg'} className="App-logo" alt="logo" /></span>
                 </Col>
 
                 <Col md={6} xs={6} className='davidPlug'>

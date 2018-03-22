@@ -7,7 +7,7 @@ const Container = () => {
 
         <div className='container'>
             <Col md={12} sm={12}>
-            I graduated from Union College in Schenectady, NY with a degree in Managerial Economics and for the last 4 years I have been working at JP Morgan. Recently I received a certificate for Full-Stack Web Development at Rutgers University. I enjoy solving complex problems and using big data to provide insight into consumer behavior.
+            I graduated from Union College in Schenectady, NY with a bachelor’s degree in Managerial Economics and for the last 4 years I have been working at JP Morgan. I also completed a certificate program for Web Development at Rutgers University. I enjoy developing engaging  web applications and collecting data that provides insight into user behavior.            
 
             </Col>
             {/* <br/>

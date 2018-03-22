@@ -15,7 +15,7 @@ class App extends Component{
   render() {
 return(
       <Router>
-        <div>
+        <div className='bodySnatcher'>
         <Wrapper>
         <Navbar/>
         <Switch>
