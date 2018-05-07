@@ -33,6 +33,7 @@ class navbar extends Component {
                             <MenuItem eventKey={3.1} href="https://www.linkedin.com/in/david-w-sosa-19706238/">LinkedIn</MenuItem>
                             <MenuItem eventKey={3.2} href="https://github.com/sosa413131">Github</MenuItem>
                             <MenuItem eventKey={3.3} href="https://stackoverflow.com/users/8422298/sosa413131">Stack Overflow</MenuItem>
+                            <MenuItem eventKey={3.4} href="https://www.upwork.com/o/profiles/users/_~010e2ef054b372a098/">Upwork</MenuItem>
                             <MenuItem divider />
                             <MenuItem  href="mailto:Sosa.David88@gmail.com" eventKey={3.3}>Email</MenuItem>
                         </NavDropdown>

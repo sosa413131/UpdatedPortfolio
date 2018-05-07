@@ -25,11 +25,24 @@
     border: 5px solid whitesmoke;
 }
 
+.description {
+    
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    right: 15px;
+    z-index: 1;
+}
 
-/* .card:hover{
-        transition: all .2s ease-in-out;
-            transform: scale(1.1); 
-} */
+.imageDiv:Hover .description  {
+    visibility: visible;
+}
+
 
 
 
