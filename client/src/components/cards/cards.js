@@ -1,6 +1,6 @@
 import React from 'react';
 import "./cards.css";
-import { Button } from 'react-bootstrap';
+import { Button, Popover } from 'react-bootstrap';
 
 
 const Cards = (props) => {
@@ -9,9 +9,20 @@ const Cards = (props) => {
         <div className='row displayCards'>
             {props.projects.map(item =>
                 <div className='col-md-4 col-sm-6 cardDiv' key={item.name}>
-                    <div className={"imageDiv"}> 
-                    <img src={item.image} alt={item.name} height="300" width="300" className='card' href={item.deployedsite}/>
-                    <span className="description">{item.description}</span>
+                    <div className={"imageDiv"}>
+                        <img src={item.image} alt={item.name} height="300" width="300" className='card' href={item.deployedsite} />
+
+                        <div style={{ height: 120 }}>
+                            <Popover
+                                id="popover-basic"
+                                placement="right"
+                                positionLeft={200}
+                                positionTop={50}
+                                title={item.name}
+                            >
+                                {item.description}
+                            </Popover>
+                        </div>;
                    </div>
                     <div className='cardTitle'> {item.name}</div>
                     {(item.works) ? <div><Button bsStyle='primary' className='appButton' href={item.deployedsite}> View App</Button>  <Button bsStyle='success' className='codeButton' href={item.githubRepoLink}> View Code</Button></div> : <div><Button bsStyle='danger' className='appButton' href={'/construction'}> TBD </Button>  <Button bsStyle='warning' className='codeButton' href={item.githubRepoLink}> View Code</Button></div>}

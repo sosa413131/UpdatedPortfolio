@@ -2,7 +2,6 @@ import "./navbar.css";
 import React, { Component } from 'react';
 import API from "../../utils/utility";
 import 'react-dom'
-import Dropdown from '../dropdown'
 import { Navbar, Nav, NavItem, NavDropdown, MenuItem } from 'react-bootstrap';
 
 class navbar extends Component {
@@ -60,7 +59,7 @@ class navbar extends Component {
                     </Nav>
                     <Nav pullRight>
                         <NavDropdown eventKey={3} title="Social Media" id="basic-nav-dropdown">
-                            {this.state.socialMediaNavItems.length ? this.state.socialMediaNavItems.map(function (SM) { return <MenuItem eventKey={`3.${SM.number}`} href={SM.href}>{SM.platform}</MenuItem> }) : "LOADING"}
+                            {this.state.socialMediaNavItems.length ? this.state.socialMediaNavItems.map(function (SM) { return <MenuItem eventKey={`3.${SM.number}`} key={SM.platform} href={SM.href}>{SM.platform}</MenuItem> }) : "LOADING"}
                             <MenuItem divider />
                             <MenuItem href="mailto:Sosa.David88@gmail.com" eventKey={3.3}>Email</MenuItem>
                         </NavDropdown>

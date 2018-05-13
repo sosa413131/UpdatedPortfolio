@@ -11,8 +11,8 @@ class About extends Component {
         return (
             <div>
                 <Hero backgroundImage={'/skeletonanddavid.jpg'}>
-                   <span className='.welcome'> <h1><Col md={2} xs={2}><FaBomb className={'bomb'}/></Col><Col md={8} xs={8}> Welcome to My Page</Col><Col md={2} xs={2}><FaDollar className={'money'}/></Col></h1></span>
-                   <h2>  <Col md={12} xs={12}> <span className='welcomeSmall'>Operations Professional, Web Developer, and Pop Culture Enthusiast </span></Col></h2>
+                   <span className='.welcome'> <h1><Col md={2} xs={2}><FaBomb className={'bomb'}/></Col><Col md={8} xs={8} className={'welcomeText'}> Welcome to My Page</Col><Col md={2} xs={2}><FaDollar className={'money'}/></Col></h1></span>
+                   <h2>  <Col md={12} xs={12}> <span className='welcomeSmall'>Operations Professional, Web Developer, and Pop Culture Enthusiast</span></Col></h2>
                 </Hero>
                 <Container/>
             </div>

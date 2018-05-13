@@ -2,22 +2,22 @@
     {
         "number": "1",
         "platform":"LinkedIn",
-        "icon": "",
+        "icon": "/icons/linkedin.svg",
         "href":"https://www.linkedin.com/in/david-w-sosa-19706238/"
     },
     {   "number": "2",
         "platform":"GitHub",
-        "icon":"",
+        "icon":"/icons/github.svg",
         "href":"https://github.com/sosa413131"
     },
     {   "number": "3",
         "platform":"Stack Overflow",
-        "icon":"",
+        "icon":"/icons/stackoverflow.svg",
         "href":"https://stackoverflow.com/users/8422298/sosa413131"
     },
     {   "number": "4",
         "platform":"Upwork",
-        "icon":"",
+        "icon":"/icons/upwork.svg",
         "href":"https://www.upwork.com/o/profiles/users/_~010e2ef054b372a098/"
     }
 ]
