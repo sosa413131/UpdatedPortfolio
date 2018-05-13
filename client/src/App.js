@@ -10,31 +10,27 @@ import Footer from "./components/footer";
 import Construction from './pages/construction';
 import NoMatch from './pages/notfound';
 
-
-class App extends Component{
+class App extends Component {
   render() {
-return(
+    return (
       <Router>
         <div className='bodySnatcher'>
-        <Wrapper>
-        <Navbar/>
-        <Switch>
-          <Route exact path="/" component={About} />
-          <Route exact path="/about" component={About} />
-          <Route path="/portfolio" component={Portfolio}/>
-          <Route path="/contact" component={Contact} /> 
-            <Route path="/construction" component={Construction} /> 
-            <Route  path="/*"component={NoMatch}/> 
-        </Switch>
-        <Footer/>
-        </Wrapper>
+          <Wrapper>
+            <Navbar />
+            <Switch>
+              <Route exact path="/" component={About} />
+              <Route exact path="/about" component={About} />
+              <Route path="/portfolio" component={Portfolio} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/construction" component={Construction} />
+              <Route path="/*" component={NoMatch} />
+            </Switch>
+            <Footer />
+          </Wrapper>
         </div>
       </Router>
-)
-    
+    )
   }
 }
-
-
 export default App;
 

@@ -7,6 +7,9 @@ export default {
     getProjects: function () {
         return axios.get("/api/projects");
     },
+    getSocialMedia: function () {
+        return axios.get("/api/socialmedia");
+    },
     postContact: function (contact) {
         axios.post("/api/postcontact", {
             name: contact.name,
@@ -23,4 +26,5 @@ export default {
             });
 
     }
+
 };

@@ -1,0 +1,23 @@
+[
+    {
+        "number": "1",
+        "platform":"LinkedIn",
+        "icon": "",
+        "href":"https://www.linkedin.com/in/david-w-sosa-19706238/"
+    },
+    {   "number": "2",
+        "platform":"GitHub",
+        "icon":"",
+        "href":"https://github.com/sosa413131"
+    },
+    {   "number": "3",
+        "platform":"Stack Overflow",
+        "icon":"",
+        "href":"https://stackoverflow.com/users/8422298/sosa413131"
+    },
+    {   "number": "4",
+        "platform":"Upwork",
+        "icon":"",
+        "href":"https://www.upwork.com/o/profiles/users/_~010e2ef054b372a098/"
+    }
+]
