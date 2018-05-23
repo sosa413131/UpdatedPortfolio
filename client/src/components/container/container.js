@@ -7,7 +7,7 @@ const Container = () => {
 
         <div className='container'>
             <Col md={12} sm={12}>
-            <p>I graduated from Union College in Schenectady, NY with a bachelor’s degree in Managerial Economics and for the last 4 years I have been working at JP Morgan as an operations analyst. During my time in this role I have done quality control on client info, data migration and remediation projects. Recently I have been developing and testing features for the new client on-boarding platform. I am also a part-time tutor for the certificate program in web development at Rutgers University. I enjoy developing engaging web applications and collecting data that provides insight into user behavior.</p>
+            <p>I graduated from Union College in Schenectady, NY with a bachelor’s degree in Managerial Economics and for the last 4 years I have been working at JP Morgan. During my time in this role I have worked on quality control of client info, data migration and remediation projects. I also completed a certificate program for Web Development at Rutgers University and I am now a part-time tutor/substitute teaching assistant for the program. I enjoy solving complex problems and collecting and analyzing data that provides insight into user behavior.</p>
             </Col>
             {/* <br/>
 

@@ -22,6 +22,8 @@ class Portfolio extends Component {
                     throw new Error("API error");
                 };
 
+                console.log(res.data)
+
                 this.setState(
                     // API projects response assigned to state
                     { projects: res.data }

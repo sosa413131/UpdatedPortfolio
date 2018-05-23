@@ -13,6 +13,8 @@ const path = require("path");
 const app = express();
 const PORT = process.env.PORT || 8080;
 const router = express.Router();
+// Firebase config
+const firebaseConfig  = process.env.config;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.json());
